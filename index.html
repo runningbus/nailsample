@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>SVG</title>
+        <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+        <style>
+            .fingers .nail {
+                fill:#ffe6d5
+            }
+            .fingers .blue-nail {
+                fill: #175282
+            }
+            .fingers .green-nail {
+                fill: #008000
+            }
+        </style>
+    </head>
+    <body>
+        <h1>SVG</h1>
+        <div class="buttons">
+            <button data-add="blue-nail">Blue nail</button>
+            <button data-add="green-nail">Green nail</button>
+            <button>Show/Hide</button>
+        </div>
+
+        <svg
+            width="210" 
+            height="297"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            class="fingers"
+        >
+            <g id="finger">
+                <path
+                    d="m45.72795,265.10778l-1.30609,-162.97842c0,0 1.95914,-75.35561 60.08039,-74.47938c58.12124,0.87623 58.7743,61.33595 58.7743,61.33595l1.30609,179.62677l-118.85469,-3.50492z"
+                    fill="#ffccaa"
+                    stroke-miterlimit="4"
+                    stroke-width="0.374"
+                />
+                <path
+                    d="m59.16487,134.80665c0,0 -2.04017,8.16067 9.18075,12.75105c11.22093,4.59038 28.05231,3.5703 33.66277,3.5703c5.61046,0 46.41382,-7.14059 46.41382,-13.77114c0,-6.63054 9.18076,-64.77533 0.51004,-75.99625c-8.67071,-11.22092 -27.03222,-25.5021 -43.86361,-24.99205c-16.83138,0.51004 -42.33348,14.79121 -47.4339,28.56235c-5.10042,13.77113 1.53013,69.87574 1.53013,69.87574z"
+                    fill="#ffe6d5"
+                    stroke="#000000"
+                    stroke-width="0.26458px"
+                    class="nail"
+                />
+                <image id="img_1" xlink:href="./images/pngwave.png" width="40" height="40" x="60" y="60" style="display: none;"/>
+            </g>
+        </svg>
+
+        <!--
+        <svg class="fingers" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" width="210" height="297">
+            <defs>
+                <linearGradient osb:paint="solid">
+                    <stop style="stop-color:#ffccaa;stop-opacity:1;" offset="0" />
+                </linearGradient>
+            </defs>
+            <g class="finger">
+                <path
+                    style="fill:#ffccaa;stroke:none;stroke-width:0.374;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+                    d="M 45.727954,265.10778 44.421858,102.12936 c 0,0 1.959146,-75.355609 60.080392,-74.479379 58.12124,0.876226 58.7743,61.335953 58.7743,61.335953 l 1.30609,179.626766 z"
+                    class="first" />
+                <path
+                    style="stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+                    d="m 59.164867,134.80665 c 0,0 -2.040167,8.16067 9.180756,12.75105 11.220924,4.59038 28.052308,3.5703 33.662767,3.5703 5.61046,0 46.41382,-7.14059 46.41382,-13.77114 0,-6.63054 9.18076,-64.775326 0.51004,-75.99625 -8.67071,-11.220921 -27.03222,-25.502097 -43.86361,-24.992054 -16.83138,0.510042 -42.33348,14.791216 -47.433898,28.56235 -5.10042,13.771133 1.530125,69.875744 1.530125,69.875744 z"
+                    class="nail" />
+            </g>
+        </svg>
+        -->
+
+        <script src="./js/main.js"></script>
+    </body>
+</html>
